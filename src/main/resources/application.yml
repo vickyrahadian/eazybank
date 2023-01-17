@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+        show_sql: 'true'
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    hikari:
+      connection-timeout: '600000'
+      idle-timeout: '600000'
+      maximum-pool-size: '1'
+      max-lifetime: '1800000'
+    password: SdcnECeuwTdFJoibXYk7Q5WUtsMXi4dK
+    username: rhndjerx
+    url: jdbc:postgresql://floppy.db.elephantsql.com/rhndjerx
+logging:
+  level:
+    root: trace
+#    org.hibernate.SQL: debug
+#    org.hibernate.type.descriptor.sql: info
+
+#spring.datasource.url=jdbc:postgresql://docker-host:5432/postgres
+#spring.datasource.username=postgres
+#spring.datasource.password=postgres
